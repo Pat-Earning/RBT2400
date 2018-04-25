@@ -1,0 +1,18 @@
+/device
+Device.java - an abstract device (name, address)
+
+/device/bluetooth
+BluetoothService.java - handle bluetooth connections
+
+/device/gps
+Tracker.java - abstract device (commands: List, Fetch...)
+RBT2400.java - concrete Tracker device
+RBT2400Settings.java - settings data for BT2400
+RBT2400Comm.java - data to manage the communication (number of retries, expected message length...)
+
+/data/gps
+Waypoint.java - data structure for a point on a track
+Track.java - the class for a whole track; metadata + a list of waypoints
+
+/
+RBT.java - the representation of a RBT2400 device
